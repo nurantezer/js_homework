@@ -97,6 +97,7 @@
 // }
 //  !if içinde if örneği
 
+
 //  let ad = prompt("isminizi giriniz");
 //  let tckn = prompt("TCKN giriniz");
 

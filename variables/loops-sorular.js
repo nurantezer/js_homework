@@ -52,14 +52,23 @@
 
 //*Soru -5 bir sayının (number) basamak sayısını yazdıran kodu yazınız.
 
-let sayi = 123456789;
-let basamak = 0;
+// let sayi = 123456789;
+// let basamak = 0;
 
-while (true) {
-  sayi = Math.floor(sayi / 10);
-  basamak++;
-  if (sayi === 0) {
-    break;
+// while (true) {
+//   sayi = Math.floor(sayi / 10);
+//   basamak++;
+//   if (sayi === 0) {
+//     break;
+//   }
+// }
+// console.log(basamak);
+
+let result = "";
+for (let i = 1; i <= 5; i++) {
+  for (let j = 1; j <= 5; j++) {
+    result += "*";
   }
+  result += "\n";
 }
-console.log(basamak);
+console.log(result);

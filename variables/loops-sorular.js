@@ -9,11 +9,27 @@
 
 //*Soru-2) Kullanıcıdan alınan 5 sayının ortalamasını konsola yazdırınız.
 
-let sayac = 0;
+// let sayac = 0;
+// let sum = 0;
+// while (sayac < 5) {
+//   const sayi = +prompt("bir sayi giriniz");
+//   sum += sayi;
+//   sayac++;
+// }
+// console.log(sum / 5);
+
+//*Soru-3 Kullanıcıdan alınan sayıları negatif girilene kadar
+//*toplayan ve konsola yazdıran kodu yazınız.
+
 let sum = 0;
-while (sayac < 5) {
+let flag = true;
+
+while (flag) {
   const sayi = +prompt("bir sayi giriniz");
-  sum += sayi;
-  sayac++;
+  if (sayi < 0) {
+    flag = false;
+  } else {
+    sum += sayi;
+  }
 }
-console.log(sum / 5);
+console.log(sum);

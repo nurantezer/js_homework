@@ -50,4 +50,16 @@
 //   }
 // }
 
-//*So
+//*Soru -5 bir sayının (number) basamak sayısını yazdıran kodu yazınız.
+
+let sayi = 123456789;
+let basamak = 0;
+
+while (true) {
+  sayi = Math.floor(sayi / 10);
+  basamak++;
+  if (sayi === 0) {
+    break;
+  }
+}
+console.log(basamak);

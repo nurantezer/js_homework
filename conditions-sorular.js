@@ -12,3 +12,14 @@
 
 const sayi = -100;
 0 < sayi && sayi < 100 ? console.log(`sağlar`) : console.log(`sağlamaz`);
+
+//*Soru-3 18 yaşından büyüklerin oy kullanabileceği 18 yaşından küçüklerin
+//*oy kullanamayacağını ternary yaıi ile konsola yazdıran kodu yazınız
+
+const yas = 17;
+
+yas < 18 ? console.log(`oy kullanamaz`) : console.log(`oy kullanabilir`);
+
+const cihaz = `mobil`;
+const isMobile = cihaz === `mobil` ? `mobile` : `mobile değil`;
+console.log(cihaz);

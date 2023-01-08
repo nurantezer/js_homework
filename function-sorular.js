@@ -40,3 +40,26 @@ const isPalindrome = function (string) {
     : `${string} palindrome değil`;
 };
 console.log(isPalindrome(string));
+
+//*Soru4-) Belirli bir string ifadenin içindeki sesli harfleri bulan fonksiyonu yazınız
+
+function findVowels(str) {
+  let vowels = ``;
+  for (let i = 0; i < str.length; i++) {
+    if (
+      str[i] == `a` ||
+      str[i] == `e` ||
+      str[i] == `ı` ||
+      str[i] == `i` ||
+      str[i] == `o` ||
+      str[i] == `ö` ||
+      str[i] == `u` ||
+      str[i] == `ü`
+    ) {
+      vowels += str[i];
+    }
+  }
+  return vowels;
+}
+
+console.log(findVowels(`hello world`));

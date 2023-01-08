@@ -63,3 +63,16 @@ function findVowels(str) {
 }
 
 console.log(findVowels(`hello world`));
+
+//*Soru-5 Belirli bir sayının tam bölenlerinin toplamını bulan fonksiyonu yazınız.
+
+function sumOfDivisors(number) {
+  let sum = 0;
+  for (let i = 0; i <= number; i++) {
+    if (number % i === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+console.log(sumOfDivisors(5));

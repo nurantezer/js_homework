@@ -87,3 +87,16 @@ function factorial(number) {
 }
 
 console.log(factorial(5));
+
+//*Soru-7 Belirli bir sayının asal olup olmadığını bulan fonksiyonu yazınız
+
+function isPrime(number) {
+  for (let i = 2; i < number; i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return number > 1;
+}
+
+console.log(isPrime(6));

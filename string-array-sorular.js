@@ -53,3 +53,6 @@ function name(str) {
   return filt.join("");
 }
 console.log(name(str));
+
+//*5. Bir javaScrip dizisinde tekrar eden değerleri bulan bir javascript
+//*programı yazınız

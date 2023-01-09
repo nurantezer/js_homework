@@ -24,3 +24,15 @@ function average(dizi) {
   return sum / dizi.length;
 }
 console.log(average(dizi));
+
+//*3. Verilen pozitif olmayan bir tam sayıyı argüman olarak lana ve rakamları
+//*azalan sırada döndüren bir fonksiyon yazılmaktadır. Özetle, rakamları
+//*yeniden düzenleyerek mümkün olan en yüksek sayıyı oluşturun
+//*example input : 42145 output : 54421
+
+let sayi = 123456789;
+
+function reverse(num) {
+  return +num.toString().split("").sort().reverse().join("");
+}
+console.log(reverse(sayi));

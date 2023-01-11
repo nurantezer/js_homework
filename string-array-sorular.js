@@ -54,5 +54,40 @@ function name(str) {
 }
 console.log(name(str));
 
-//*5. Bir javaScrip dizisinde tekrar eden değerleri bulan bir javascript
-//*programı yazınız
+// 5. Bir JavaScript dizisinde yinelenen değerleri bulan bir JavaScript programı yazın.
+​
+// Examples:
+// Input: [1, 2, 3, 2, 1, 4, 5, 6, 7, 8, 9, 9, 10]
+// Output: 1, 2, 9
+​
+// çözüm
+function findDuplicates(arr) {
+  // 1. arrayi sırala
+  let sortArr = arr.sort()
+  // 2. arrayi filtrele
+  let filt =sortArr.filter((a, i) => a === arr[i + 1])
+  // 3. arrayi stringe çevir
+  return filt.join(',');
+  // return arr.sort().filter((a, i) => a === arr[i + 1]).join(',');
+}
+​
+console.log(findDuplicates([1, 2, 3, 2, 1, 4, 5, 6, 7, 8, 9, 9, 10,11,11,12,43,12])); // 1,2,9
+​
+​
+​
+​
+​
+// 6. Elemanları sayılardan oluşan bir listenin elemanlarının karelerinin toplamını bulan bir JavaScript programı yazın.
+​
+// Examples:
+// Input: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// Output: 285
+​
+// çözüm
+function sumOfSquares(arr) {
+  // 1. arrayi karelerini al
+  // 2. arrayi topla
+  return arr.map((a) => a * a).reduce((a, b) => a + b);
+}
+​
+console.log(sumOfSquares([1, 2, 3, 4, 5, 6, 7, 8, 9])); // 285

@@ -140,8 +140,21 @@ const carData = [
 
 const dizi1 = carData.filter((car) => car[`color`] === "Silver");
 console.log(dizi1.forEach((c) => console.log(c.make)));
-// 2- 2015 yılından sonra üretilmiş arabaları bir listeye ata.
-// 3- Arabaların ortalama kilometre değerini hesapla.
+
+//* 2- 2015 yılından sonra üretilmiş arabaları bir listeye ata.
+
+const newList = carData.filter((c) => c.year > 2015);
+console.log(newList);
+
+//* 3- Arabaların ortalama kilometre değerini hesapla.
+
+let sum = 0;
+const newList1 = carData.map((car, i, dizi) => (sum += car.mileage));
+console.log(sum / carData.length);
+
+const newList = carData.reduce((acc, cur) => acc + cur.mileage, 0);
+console.log(newList / carData.length);
+
 // 4- 8 silindirli araçları listele
 // 5- Farklı uzunlukta olması muhtemel iki listeden İlki key'lerden, ikincisi ise Value'lardan oluşmaktadır. Yine key ve value'lardan oluşan bir obje döndüren bir fonksiyon yazınız. Yeterli value yoksa, kalan keylerin değeri null olmalıdır. Yeterli anahtar yoksa, değerlerin geri kalanını yok sayın.
 // keys = ['a', 'b', 'c', 'd']

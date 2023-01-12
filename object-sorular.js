@@ -130,7 +130,16 @@ const carData = [
     },
   },
 ];
-// 1- Rengi gümüş olan arabaları bir listeye ata.
+//* 1- Rengi gümüş olan arabaları bir listeye ata.
+
+// let dizi = [];
+// carData.forEach((car) =>
+//   car.color.toLowerCase() === "silver" ? dizi.push(car) : null
+// );
+// console.log(dizi);
+
+const dizi1 = carData.filter((car) => car[`color`] === "Silver");
+console.log(dizi1.forEach((c) => console.log(c.make)));
 // 2- 2015 yılından sonra üretilmiş arabaları bir listeye ata.
 // 3- Arabaların ortalama kilometre değerini hesapla.
 // 4- 8 silindirli araçları listele

@@ -138,28 +138,41 @@ const carData = [
 // );
 // console.log(dizi);
 
-const dizi1 = carData.filter((car) => car[`color`] === "Silver");
-console.log(dizi1.forEach((c) => console.log(c.make)));
+// const dizi1 = carData.filter((car) => car[`color`] === "Silver");
+// console.log(dizi1.forEach((c) => console.log(c.make)));
 
 //* 2- 2015 yılından sonra üretilmiş arabaları bir listeye ata.
 
-const newList = carData.filter((c) => c.year > 2015);
-console.log(newList);
+// const newList = carData.filter((c) => c.year > 2015);
+// console.log(newList);
 
 //* 3- Arabaların ortalama kilometre değerini hesapla.
 
-let sum = 0;
-const newList1 = carData.map((car, i, dizi) => (sum += car.mileage));
-console.log(sum / carData.length);
+// let sum = 0;
+// const newList1 = carData.map((car, i, dizi) => (sum += car.mileage));
+// console.log(sum / carData.length);
 
-const newList = carData.reduce((acc, cur) => acc + cur.mileage, 0);
-console.log(newList / carData.length);
+// const newList1 = carData.reduce((acc, cur) => acc + cur.mileage, 0);
+// console.log(newList1 / carData.length);
 
-// 4- 8 silindirli araçları listele
-// 5- Farklı uzunlukta olması muhtemel iki listeden İlki key'lerden, ikincisi ise Value'lardan oluşmaktadır. Yine key ve value'lardan oluşan bir obje döndüren bir fonksiyon yazınız. Yeterli value yoksa, kalan keylerin değeri null olmalıdır. Yeterli anahtar yoksa, değerlerin geri kalanını yok sayın.
-// keys = ['a', 'b', 'c', 'd']
-// values = [1, 2, 3]
-// createDict(keys, values) // returns {'a': 1, 'b': 2, 'c': 3, 'd': null}
-// 6- Bir obje içerisindeki key ve value'ları değiştirin. Yani key'ler value'lar olmalı ve value'lar key'ler olmalıdır.
+//* 4- 8 silindirli araçları listele
+
+//* 5 Farklı uzunlukta olması muhtemel iki listeden İlki key'lerden, ikincisi ise Value'lardan oluşmaktadır.
+//* Yine key ve value'lardan oluşan bir obje döndüren bir fonksiyon yazınız. Y
+//* eterli value yoksa, kalan keylerin değeri null olmalıdır. Yeterli anahtar yoksa,
+//*  değerlerin geri kalanını yok sayın.
+//* keys = ['a', 'b', 'c', 'd']
+// *values = [1, 2, 3]
+//* createDict(keys, values) // returns {'a': 1, 'b': 2, 'c': 3, 'd': null}
+
+const createDict = (keys, values) => {
+  const dict = {};
+  keys.forEach((key, index) => {
+    dict[key] = values[index] || null;
+  });
+  return dict;
+};
+//* 6- Bir obje içerisindeki key ve value'ları değiştirin. Yani key'ler value'lar olmalı ve
+//*value'lar key'ler olmalıdır.
 // Örnek: {a: 1, b: 2, c: 3}  -->  {1: 'a', 2: 'b', 3: 'c'}
 // Not: Eğer bir value birden fazla key'e sahipse, son key'i kullanın.

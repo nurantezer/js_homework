@@ -1,15 +1,15 @@
-const colors = ["gree,","red","yellow","blue"];
+const colors = ["gree","red","yellow","blue"];
 const myBtn = document.getElementById("btn");
-const color = document.getElementById(".color");
+const color = document.getElementById("color");
+const body = document.getElementsByTagName("body");
 
-myBtn.addEventListener("click", function(){
+myBtn.addEventListener("click", () => {
     const randomNumber = getRandomNumber();
-    console.log(randomNumber);
-
     document.body.style.backgroundColor = colors[randomNumber];
-    color.textContent = color[randomNumber];
+    color.innerText = colors[randomNumber];
 })
 
 function getRandomNumber() {
     return Math.floor(Math.random()*colors.length);
 }
+console.log(getRandomNumber());

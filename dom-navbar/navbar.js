@@ -17,8 +17,9 @@ navToggle.addEventListener("click", function(){
     //* }else{
     // *    links.classList.add("show-links");
     //* }
-    links.classList.toggle("show-links");  //tıklandığında göster.
+    links.classList.toggle("show-links");  //bağlantıları göster tıklandığında
 })
 
-//!BU projede css kısmındaki .links{} önemli çünkü heigthini auto vermezsem görünmez.
+//!BU projede css kısmındaki .links{} önemli çünkü heigthini auto vermezsem görünmez.Boyut değiştirdiğimde media 
+//!qery için gerekli
 //!Çok önemliii ben .show-links clasını css de tanımlayıp burada çağırdıımm.

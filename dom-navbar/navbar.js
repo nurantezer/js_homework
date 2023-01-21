@@ -1,8 +1,8 @@
-//* classList - shows/gets all classes
-//* contains - checks classList for specific class
-//* add - add class
-//* remove - remove class
-//* toggle - toggles class
+//* classList - shows/gets all classes tüm sınıfları gösterir/alır
+//* contains - checks classList for specific class belirli bir sınıf için classList'i kontrol eder
+//* add - add class  sınıf ekle
+//* remove - remove class sınıfı kaldır
+//* toggle - toggles class sınıfı değiştirir
 //* Bu sayfada responsive var
 
 const navToggle = document.querySelector(".nav-toggle");

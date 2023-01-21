@@ -21,3 +21,4 @@ navToggle.addEventListener("click", function(){
 })
 
 //!BU projede css kısmındaki .links{} önemli çünkü heigthini auto vermezsem görünmez.
+//!Çok önemliii ben .show-links clasını css de tanımlayıp burada çağırdıımm.

@@ -24,3 +24,5 @@ questions.forEach(function(question){
 
     })
 })
+
+//*e.currentTarget hedef tag

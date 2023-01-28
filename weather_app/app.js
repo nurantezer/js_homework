@@ -72,3 +72,20 @@ const getWeatherDataFromApi = async () => {
   form.reset();
   input.focus();
 };
+ 
+
+//*Form seçince reset işlemi kolay olur.Form submit işlemi enter veya formun içindeki submit butonu ile direk 
+//*yapılabiliyor.
+//* top-banner içindeki form
+//*e.preventDefault() formu submit edip sayfayı yeniliyor. Bu fonksiyon sayensinde bu işlemi durduruyorum.Formu 
+//*submit etmiyor artık.Sen benim istediğim gibi çalış dedik sayfayı yenileme benim verdiğim fonksiyonu tetikle
+//*Form kullanmanın bir avantajı her value yu silmek yerine form.reset yaptığımda inputlar boşalıyor. 
+//*Formun ikinci bir avantajıda kullanıcı kolaylık ister submit demeden enterle de gönderiyorum verileri
+//*Aksiyos hem veri gönderip hemde veri alırken date typene json olarak alabiliyor.Aksiyos bir kütüphanedir.
+//*Fetch ile işlem yaparken veriyi json olarak gönderip jason parse etmem gerekiyor.Aksiyos daha kolay
+//*DecryptStringAES şifreli apıyi çözdüm burda.,
+//*figure figcaption seo
+//*creat element oluştururken çerçeveyi oluşturup innerhtml ile yazabilirm kalanını hepsi öyle yapılmıyor piyasada
+//*prepend dediğimde son eklediğimi başta gösteriyor
+//*forEach => array +nodeList
+//*map,filter reduce => array   Array.from ile arraye çevirdim

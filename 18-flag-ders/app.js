@@ -15,7 +15,7 @@ const fetchCountry = async (name) => {
   } catch (error) {
     console.log(error);
   }
-};
+}
 
 const renderError = (err) => {
   const countriesDiv = document.querySelector(".countries");
@@ -67,6 +67,10 @@ const renderCountry = (country) => {
 
   `;
 };
+
+
+
+
 
 fetchCountry("turkey");
 fetchCountry("usa");

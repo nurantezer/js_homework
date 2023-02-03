@@ -34,7 +34,7 @@ const getWeatherDataFromApi = async() => {
         const filteredArray = [...cityNameSpans].filter(span => span.innerHTML == cityName);
         if(filteredArray.length > 0){
             msgSpan.innerText = `uyarı${name}` 
-            return;
+            return;  //*Burayı aşağıdaki satıra geçmesin yeni created li üretmesin diye yaptık
         }
     }
     const createdLi = document.createElement("li");
